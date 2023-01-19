@@ -9,7 +9,7 @@
  */
 void bubble_sort(int *array, size_t size)
 {
-	int temp, n_times = 0;
+	int temp/*, n_times = 0*/;
 	size_t i, j;
 	int h_v = array[0]; /* highest value */
 	size_t h_p = size; /* highest position */
@@ -33,11 +33,11 @@ void bubble_sort(int *array, size_t size)
 			if (h_v == array[h_p - 1])
 				h_p--;
 
-			n_times++;
+			/*n_times++;*/
 		}
 		if (sorted)
 			break;
 	}
-	printf("======= ");
-	printf("%d total cycle.\n", n_times);
+	/*printf("======= ");*/
+	/*printf("%d total cycle.\n", n_times);*/
 }
