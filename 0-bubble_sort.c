@@ -13,10 +13,12 @@ void bubble_sort(int *array, size_t size)
 	size_t i, j;
 	int h_v = array[0]; /* highest value */
 	size_t h_p = size; /* highest position */
-	bool sorted = true;
+	bool sorted;
 
 	for (i = 0; i < h_p; i++)
 	{
+		sorted = true;
+
 		for (j = 0; j < h_p - 1; j++)
 		{
 			if (array[j] > array[j + 1])
