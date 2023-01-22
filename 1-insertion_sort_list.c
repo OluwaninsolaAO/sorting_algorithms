@@ -26,7 +26,7 @@
  * x->next = node
  * y->prev = prev
  *
- * Logic to condiser during the swapping of x and y
+ * Logic to condiser during the swapping, for x and y
  * provided that they are NULL pointers.
  * if x == NULL don't update x
  * if y == NULL don't update y
