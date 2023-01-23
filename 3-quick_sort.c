@@ -45,7 +45,7 @@ void partition(int *array, size_t size, size_t hi, size_t lo)
 	{
 		if (array[j] <= array[hi])
 		{
-			i++;
+			i++; /*swap and print_array*/
 			temp = array[j];
 			array[j] = array[i];
 			array[i] = temp;
@@ -53,14 +53,15 @@ void partition(int *array, size_t size, size_t hi, size_t lo)
 				print_array(array, size);
 		}
 	}
-	i++;
+	i++; /*swap and print_array*/
 	temp = array[j];
 	array[j] = array[i];
 	array[i] = temp;
 	if (i != (int) j)
 		print_array(array, size);
-	if (i != 0)
+
+	if (i != 0) /*sort left partition*/
 		partition(array, size, i - 1, lo);
-	if (i < (int) size)
+	if (i < (int) size) /*sort right partition*/
 		partition(array, size, hi, i + 1);
 }
