@@ -36,6 +36,7 @@ void partition(int *array, size_t size, size_t hi, size_t lo)
 {
 	int i, temp;
 	size_t j;
+	bool flag = false;
 
 	/*if (hi == lo || hi + 1 == lo || hi - 1 == lo)*/
 	if (hi == lo || hi + 1 == lo)
@@ -52,6 +53,7 @@ void partition(int *array, size_t size, size_t hi, size_t lo)
 			array[i] = temp;
 			if (i != (int) j)
 				print_array(array, size);
+			flag = true;
 		}
 	}
 	i++; /*swap and print_array*/
