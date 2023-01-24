@@ -37,7 +37,8 @@ void partition(int *array, size_t size, size_t hi, size_t lo)
 	int i, temp;
 	size_t j;
 
-	if (hi == lo || hi + 1 == lo || hi - 1 == lo)
+	/*if (hi == lo || hi + 1 == lo || hi - 1 == lo)*/
+	if (hi == lo || hi + 1 == lo)
 		return;
 
 	i = lo - 1;
