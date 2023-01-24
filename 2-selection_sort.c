@@ -25,7 +25,7 @@ void selection_sort(int *array, size_t size)
 		for (j = i + 1; j < size; j++)
 		{
 			x = array[j];
-			if (x <= n)
+			if (x < n)
 			{
 				pos = j;
 				n = x;
