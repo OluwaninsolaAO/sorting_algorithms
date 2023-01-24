@@ -43,7 +43,7 @@ void partition(int *array, size_t size, size_t hi, size_t lo)
 	i = lo - 1;
 	for (j = lo; j < hi; j++)
 	{
-		if (array[j] <= array[hi])
+		if (array[j] < array[hi])
 		{
 			i++; /*swap and print_array*/
 			temp = array[j];
